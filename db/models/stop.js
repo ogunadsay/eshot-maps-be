@@ -11,7 +11,10 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   Stop.init({
-    id: DataTypes.INTEGER,
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true
+    },
     areaCode: DataTypes.STRING,
     name: DataTypes.STRING,
     coordinateX: DataTypes.DECIMAL(15,13),

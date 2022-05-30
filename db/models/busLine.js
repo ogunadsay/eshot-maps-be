@@ -13,7 +13,10 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   BusLine.init({
-    id: DataTypes.INTEGER,
+    id: {
+      type: DataTypes.INTEGER,
+      primaryKey: true
+    },
     lineHimId: DataTypes.INTEGER,
     description: DataTypes.STRING,
     lineEnd: DataTypes.STRING,
@@ -22,7 +25,6 @@ module.exports = (sequelize, DataTypes) => {
     workingHoursDeparture: DataTypes.STRING,
     workingHoursReturn: DataTypes.STRING,
     lineDescription: DataTypes.STRING,
-    lineId: DataTypes.INTEGER,
     lineNo: DataTypes.INTEGER,
     lineName: DataTypes.STRING
   }, {

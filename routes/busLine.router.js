@@ -1,13 +1,16 @@
 const express = require('express');
 const router = express.Router();
 
-const {findById, getAll} = require('../controllers/busLine.controller')
+const {
+  findById,
+  findBusLines,
+  findBusStops,
+  findStops
+} = require('../controllers/busLine.controller')
 
-router.get('/', function (req, res, next) {
-  res.send('API is working properly');
-});
-
-router.get('/getAll', getAll)
-router.get('/:lineId', findById)
+router.get('/busLines', findBusLines)
+router.get('/stops', findStops)
+router.get('/:busLineId', findById)
+router.get('/:busLineId/stops', findBusStops)
 
 module.exports = router;
