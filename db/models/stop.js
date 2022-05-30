@@ -6,11 +6,12 @@ const {
 module.exports = (sequelize, DataTypes) => {
   class Stop extends Model {
     static associate(models) {
+      Stop.hasMany(models.BusStop, {as: 'busStops'})
     }
   }
 
   Stop.init({
-    stopId: DataTypes.INTEGER,
+    id: DataTypes.INTEGER,
     areaCode: DataTypes.STRING,
     name: DataTypes.STRING,
     coordinateX: DataTypes.DECIMAL(15,13),

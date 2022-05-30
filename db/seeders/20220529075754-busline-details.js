@@ -4,7 +4,7 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert('BusLineDetails', [
       {
-        'busLineId': 1,
+        'busLineId': 5,
         'timeOfTheWeek': 'Hafta ici',
         "departureTime": "06:00",
         "bikeSupportedDeparture": false,
@@ -21,7 +21,7 @@ module.exports = {
         'updatedAt': new Date()
       },
       {
-        'busLineId': 1,
+        'busLineId': 5,
         'timeOfTheWeek': 'Hafta ici',
         "departureTime": "06:07",
         "bikeSupportedDeparture": false,
@@ -38,7 +38,7 @@ module.exports = {
         'updatedAt': new Date()
       },
       {
-        'busLineId': 1,
+        'busLineId': 6,
         'timeOfTheWeek': 'Hafta ici',
         "departureTime": "06:14",
         "bikeSupportedDeparture": false,
@@ -55,7 +55,7 @@ module.exports = {
         'updatedAt': new Date()
       },
       {
-        'busLineId': 2,
+        'busLineId': 7,
         'timeOfTheWeek': 'Hafta ici',
         "departureTime": "06:21",
         "bikeSupportedDeparture": false,
@@ -72,7 +72,7 @@ module.exports = {
         'updatedAt': new Date()
       },
       {
-        'busLineId': 2,
+        'busLineId': 8,
         'timeOfTheWeek': 'Hafta ici',
         "departureTime": "06:28",
         "bikeSupportedDeparture": false,
@@ -89,7 +89,7 @@ module.exports = {
         'updatedAt': new Date()
       },
       {
-        'busLineId': 2,
+        'busLineId': 8,
         'timeOfTheWeek': 'Hafta ici',
         "departureTime": "06:35",
         "bikeSupportedDeparture": false,

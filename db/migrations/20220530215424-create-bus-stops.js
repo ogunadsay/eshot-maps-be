@@ -19,7 +19,15 @@ module.exports = {
       },
       name: Sequelize.STRING,
       coordinateX: Sequelize.DECIMAL(8, 6),
-      coordinateY: Sequelize.DECIMAL(8, 6)
+      coordinateY: Sequelize.DECIMAL(8, 6),
+      createdAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updatedAt: {
+        allowNull: false,
+        type: Sequelize.DATE
+      }
     });
   },
 

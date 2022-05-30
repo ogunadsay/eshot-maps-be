@@ -4,14 +4,13 @@ module.exports = {
     await queryInterface.createTable('BusLines', {
       id: {
         allowNull: false,
-        autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      lineId: {
+      lineHimId: {
         type: Sequelize.INTEGER
       },
-      lineHimId: {
+      lineNo: {
         type: Sequelize.INTEGER
       },
       description: {
@@ -34,9 +33,6 @@ module.exports = {
       },
       lineDescription: {
         type: Sequelize.STRING
-      },
-      lineNo: {
-        type: Sequelize.INTEGER
       },
       lineName: {
         type: Sequelize.STRING

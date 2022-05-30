@@ -13,6 +13,7 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   BusLine.init({
+    id: DataTypes.INTEGER,
     lineHimId: DataTypes.INTEGER,
     description: DataTypes.STRING,
     lineEnd: DataTypes.STRING,

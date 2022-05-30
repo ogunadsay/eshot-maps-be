@@ -4,28 +4,36 @@ module.exports = {
   async up(queryInterface, Sequelize) {
     await queryInterface.bulkInsert('BusRoutes', [
       {
-        'busLineId': 1,
+        'busLineId': 5,
         'direction':1,
         "coordinateY": "38.495029",
-        "coordinateX": "27.214438"
+        "coordinateX": "27.214438",
+        "createdAt": new Date(),
+        "updatedAt": new Date()
       },
       {
-        'busLineId': 1,
+        'busLineId': 5,
         'direction':1,
         "coordinateY": "38.494974",
-        "coordinateX": "27.214317"
+        "coordinateX": "27.214317",
+        "createdAt": new Date(),
+        "updatedAt": new Date()
       },
       {
-        'busLineId': 1,
+        'busLineId': 6,
         'direction':1,
         "coordinateY": "38.494974",
-        "coordinateX": "27.214317"
+        "coordinateX": "27.214317",
+        "createdAt": new Date(),
+        "updatedAt": new Date()
       },
       {
-        'busLineId': 2,
+        'busLineId': 7,
         'direction':2,
         "coordinateY": "38.494986",
-        "coordinateX": "27.214214"
+        "coordinateX": "27.214214",
+        "createdAt": new Date(),
+        "updatedAt": new Date()
       }
     ], {});
   },

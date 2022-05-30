@@ -6,32 +6,26 @@ module.exports = {
       {
         "coordinateX": 38.49504,
         "name": "Evka 4 Son Durak",
-        "stopId": 1,
-        "coordinateY": 27.21397
+        "stopId": 10005,
+        "coordinateY": 27.21397,
+        "createdAt": new Date(),
+        "updatedAt": new Date()
       },
       {
         "coordinateX": 38.4936,
         "name": "Evka-4 Anaokulu",
-        "stopId": 1,
-        "coordinateY": 27.2128
+        "stopId": 10007,
+        "coordinateY": 27.2128,
+        "createdAt": new Date(),
+        "updatedAt": new Date()
       },
       {
         "coordinateX": 38.4919,
         "name": "Mehmet Akif Cami",
-        "stopId": 2,
-        "coordinateY": 27.2137
-      },
-      {
-        "coordinateX": 38.4903,
-        "name": "Evka 4 Muhtarlık",
-        "stopId": 3,
-        "coordinateY": 27.2149
-      },
-      {
-        "coordinateX": 38.48832,
-        "name": "Yeditepe İtfaiye",
-        "stopId": 3,
-        "coordinateY": 27.21429
+        "stopId": 10008,
+        "coordinateY": 27.2137,
+        "createdAt": new Date(),
+        "updatedAt": new Date()
       }
     ], {});
   },
