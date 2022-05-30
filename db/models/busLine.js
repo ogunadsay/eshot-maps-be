@@ -7,6 +7,8 @@ module.exports = (sequelize, DataTypes) => {
   class BusLine extends Model {
     static associate(models) {
       BusLine.hasMany(models.BusLineDetail, {as: 'busLineDetails'})
+      BusLine.hasMany(models.BusRoute, {as: 'busRoutes'})
+      BusLine.hasMany(models.BusStop, {as: 'busStops'})
     }
   }
 
